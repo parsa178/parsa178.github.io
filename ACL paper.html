@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ebhaam at SemEval-2023</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><a><img src="images/Parsa Haghighi.jpg" alt="Image"/></a></div>
+          <div class="h2 title">Parsa Haghighi</div>
+          <a class="btn btn-primary smooth-scroll mr-2" href="#about" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contact Me</a><a class="btn btn-primary" href="https://github.com/parsa178/parsa178.github.io/raw/main/Parsa_Haghighi_CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container">
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://scholar.google.com/citations?user=aHBqW7wAAAAJ&hl=en" rel="tooltip">
+              <img src="images/google-scholar-white.png" alt="Google Scholar">
+            </a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/parsa-haghighi-b2156916b/" rel="tooltip"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/parsa178" rel="tooltip"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<style>
+  .card-body p,
+  .list-group-item {
+    font-size: 18px;
+  }
+</style>
+
+<!-- Empty Space -->
+<div style="height: 30px;"></div>
+
+<div class="section" id="Pipeline">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div style="height: 20px;"></div>
+        <div class="h3 mt-0" style="margin: 30px;">Ebhaam at SemEval-2023 Task 1: A CLIP-Based Approach for Comparing Cross-modality and Unimodality in Visual Word Sense Disambiguation</div>
+      </div>
+      <center><p>Published in the Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval-2023)</p></center>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="Abstract">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body" style="margin: 35px;">
+          <div class="h4 mt-0 title">Abstract</div>
+          <p style="text-align: justify;">This paper presents an approach to tackle the task of Visual Word Sense Disambiguation (Visual-WSD), which involves determining the most appropriate image to represent a given polysemous word in one of its particular senses. The proposed approach leverages the CLIPmodel, prompt engineering, and text-to-image models such as GLIDE and DALL-E 2 for both image retrieval and generation. To evaluate our approach, we participated in the SemEval 2023 shared task on “Visual Word Sense Disambiguation (Visual-WSD)” using a zero-shot learning setting, where we compared the accuracy of different combinations of tools, including “Simple prompt-based” methods and “Generated prompt-based” methods for prompt engineering using completion models, and textto- image models for changing input modality from text to image. Moreover, we explored the benefits of cross-modality evaluation between text and candidate images using CLIP. Our experimental results demonstrate that the proposed approach reaches better results than cross-moda ity approaches, highlighting the potential of prompt engineering and text-to-image models to improve accuracy in Visual-WSD tasks. We assessed our approach in a zero-shot learning scenario and attained an accuracy of 68.75% in our best attempt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="Pipeline">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        
+          <div class="card-body text-center">
+            <div class="h4 mt-0 title">Pipeline</div>
+            <div class="card mb-3 mx-auto d-block" style="max-width: 700px; height: 450px;">
+              <img src="images/image-image pipeline.jpg" alt="Image-image pipeline" class="img-fluid" style="max-width: 80%;">
+              <div class="card-body">
+                <p class="card-text">(a) Image-modality comparison method. Using CLIP encoders for both input text and candidate images. The CLIP model is used to retrieve the candidate images that best match the input text prompts, and the retrieved images are evaluated against the ground truth images.</p>
+              </div>
+            </div>
+            <div class="card mb-3 mx-auto d-block" style="max-width: 700px;  height: 450px;">
+              <img src="images/image-text pipeline.jpg" alt="Image-text pipeline" class="img-fluid" style="max-width: 80%;">
+              <div class="card-body">
+                <p class="card-text">(b) Cross-modality comparison method. Text prompts are used to generate images using text-to-image models. The CLIP image encoder is used to encode both the generated images and candidate images, and the closest match is selected.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="PaperDownload">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body">
+          <div class="h4 mt-0 title">Download Paper</div>
+          <div style="display: flex; justify-content: center;"> <!-- Center the download icon -->
+            <a href="https://aclanthology.org/2023.semeval-1.269.pdf" class="btn btn-primary">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+      <div class="container text-center">
+        <a class="cc-google-scholar btn btn-link change-color-on-hover" href="https://scholar.google.com/citations?user=aHBqW7wAAAAJ&hl=en">
+          <img src="images/google-scholar-icon.png" alt="Google Scholar" width="30" height="30">
+        </a>
+        <a class="cc-github btn btn-link" href="https://github.com/parsa178"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/parsa-haghighi-b2156916b/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <div class="h4 title text-center">Parsa Haghighi</div>
+      <div class="text-center text-muted">
+        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
