@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Image Dataset</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"></a href="/"><img src="images/Parsa Haghighi.jpg" alt="Image"/></a></div>
+          <div class="h2 title">Parsa Haghighi</div>
+          <a class="btn btn-primary smooth-scroll mr-2" href="/#about" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contact Me</a><a class="btn btn-primary" href="https://github.com/parsa178/parsa178.github.io/raw/main/Parsa_Haghighi_CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container">
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://scholar.google.com/citations?user=aHBqW7wAAAAJ&hl=en" rel="tooltip">
+              <img src="images/google-scholar-white.png" alt="Google Scholar">
+            </a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/parsa-haghighi-b2156916b/" rel="tooltip"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/parsa178" rel="tooltip"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<style>
+  .card-body p,
+  .list-group-item {
+    font-size: 18px;
+  }
+</style>
+
+<style>
+  .card {
+    height: 90%;
+  }
+</style>
+
+<!-- Empty Space -->
+<div style="height: 30px;"></div>
+ 
+<div class="section" id="Intro">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+        <div class="h3 mt-0">Introducing Geolocalized Middle East Food Image Dataset</div>
+        <p>Enriching Image Recognition with Location-Based Information</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="Abstract">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body" style="margin: 35px;">
+          <div class="h4 mt-0 title">Abstract</div>
+          <p style="text-align: justify;">In order to develop an application that effectively tracks people's nutrition and eating habits, it is crucial to have a robust image recognition system specifically designed for identifying various types of food. Recognizing the significance of location data in improving image classification efficiency, we have embarked on a project to collect a comprehensive dataset consisting of Middle Eastern food images, accompanied by their titles, labels, and geolocation information. Our data collection process involves crawling online food ordering platforms that cater to the Middle Eastern region. Specifically, we utilize Snappfood for Iran, Yemeksepti for Turkey, and Talabat for the other Arabic countries listed above. These platforms offer a wide range of food options and provide valuable insights into the diverse culinary traditions of the Middle East.</p>
+          <img src="images/fdmap.jpg" alt="Middle Eastern Food" style="max-width: 90%; margin-top: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card {
+    border-radius: 7px;
+  }
+</style>
+
+<div class="section" id="Pipeline">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body text-center" style="text-align: justify;">
+          <div class="h4 mt-0 title">Pipeline</div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card" style="background-color: #acdf87;">
+                <div class="card-body">
+                  <h5 class="card-title">Step 1: Crawling Data</h5>
+                  <p class="card-text" style="text-align: justify;">
+                    We crawled 3 online food ordering websites to collect food images, recipes, and the geolocation of corresponding restaurants:
+                    <ul style="font-size: 16px;">
+                      <li>Snappfood.com for Iran</li>
+                      <li>Talabat for Arabic countries mentioned in the abstract</li>
+                      <li>Yemeksepeti for Turkey</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="background-color: #75be68f3;">
+                <div class="card-body" >
+                  <h5 class="card-title">Step 2: Cleaning Text Data</h5>
+                  <p class="card-text" style="text-align: justify;">- Extracting ingredients and recipes from the text data.</p> 
+                  <p class="card-text" style="text-align: justify;">- Turn all of crawled texts in a uniform format.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="background-color: #68c441bd;">
+                <div class="card-body">
+                  <h5 class="card-title">Step 3: Cleaning Image Data</h5>
+                  <p class="card-text" style="text-align: justify;">- Utilizing trained models to detect and remove duplicated images</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card" style="background-color: #578f3dbd;">
+                <div class="card-body">
+                  <h5 class="card-title">Step 4: Finalize Geolocalized Dataset</h5>
+                  <p class="card-text" style="text-align: justify;">- Assigning a 3-level hierarchical label to each image, providing detailed categorization.</p>
+                  <p class="card-text" style="text-align: justify;">- Enriching each image entry with geolocation, 3-level label, and corresponding recipe information.</p>
+                  <p class="card-text" style="text-align: justify;">- This comprehensive dataset serves as a valuable resource for training image classification models specifically tailored for food-related tasks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+      <div class="container text-center">
+        <a class="cc-google-scholar btn btn-link change-color-on-hover" href="https://scholar.google.com/citations?user=aHBqW7wAAAAJ&hl=en">
+          <img src="images/google-scholar-icon.png" alt="Google Scholar" width="30" height="30">
+        </a>
+        <a class="cc-github btn btn-link" href="https://github.com/parsa178"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/parsa-haghighi-b2156916b/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <div class="h4 title text-center">Parsa Haghighi</div>
+      <div class="text-center text-muted">
+        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
