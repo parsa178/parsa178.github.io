@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BSc Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><a href="/"><img src="images/Parsa Haghighi.jpg" alt="Image"/></a></div>
+          <div class="h2 title">Parsa Haghighi</div>
+          <a class="btn btn-primary smooth-scroll mr-2" href="/#about" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contact Me</a><a class="btn btn-primary" href="https://github.com/parsa178/parsa178.github.io/raw/main/files/Parsa_Haghighi_CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container">
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://scholar.google.com/citations?user=aHBqW7wAAAAJ&hl=en" rel="tooltip">
+              <img src="images/google-scholar-white.png" alt="Google Scholar">
+            </a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/parsa-haghighi-b2156916b/" rel="tooltip"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/parsa178" rel="tooltip"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<style>
+  .card-body p,
+  .list-group-item {
+    font-size: 22px;
+  }
+</style>
+
+<!-- Empty Space -->
+<div style="height: 30px;"></div>
+
+<div class="section" id="Intro">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div style="height: 20px;"></div>
+      <div class="h2 mt-0" style="text-align: center;">Generate fake data with Generative Adversarial Networks (GANs)</div>
+      <div class="h5 mt-0" style="text-align: center;">B.Sc Final Project</div>
+      <div class="h5 mt-0" style="text-align: center;">Under supervision of Dr. MohammadAli Khosravifard <a href="https://khosravifard.iut.ac.ir/">(link)</a></div>
+      <div class="h5 mt-0" style="text-align: center;">December 2020</div>
+      <div style="height: 20px;"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section" id="Introduction">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body" style="margin: 35px;">
+          <div class="h4 mt-0 title">Introduction</div>
+          <p style="text-align: justify;">Generative Adversarial Networks (GANs) have revolutionized the field of artificial intelligence by enabling the generation of realistic data. In my bachelor thesis, titled "Generate fake data with Generative Adversarial Networks (GANs)," conducted under the supervision of Dr. MohammadAli Khosravifard, I delved into the world of GAN algorithms. This article will provide an overview of my thesis, highlighting the key GAN models I explored and the practical applications demonstrated using TensorFlow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="gan">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body" style="margin: 35px;">
+          <div class="h4 mt-0 title">Understanding GANs</div>
+          <p style="text-align: justify;">GANs are composed of two neural networks competing against each other: the generator and the discriminator. The generator creates synthetic data samples, while the discriminator's role is to distinguish between real and fake samples. Through an iterative training process, these networks learn from each other, with the generator continuously improving its ability to generate realistic data, while the discriminator becomes more adept at identifying fake data.</p>
+          <img src="https://developers.google.com/static/machine-learning/gan/images/gan_diagram.svg" alt="Pipeline" style="max-width: 80%; margin-top: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="code">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body" style="margin: 35px;">
+          <div class="h4 mt-0 title">Implications in TensorFlow</div>
+          <p style="text-align: justify;">To demonstrate the practical application of GAN algorithms, I implemented the reviewed models using the TensorFlow framework. Specifically, I focused on generating face images and handwritten digits. By training the GAN models on appropriate datasets, I witnessed the remarkable capability of GANs to generate synthetic data that closely resembles real images. This practical implementation allowed me to witness firsthand the power of GANs in generating realistic data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section" id="PaperDownload">
+  <div class="container" style="max-width: 1400px;">
+    <div style="text-align: center;" class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="card-body">
+          <div class="h4 mt-0 title">Download Final Report (in Persian)</div>
+          <div style="display: flex; justify-content: center;"> <!-- Center the download icon -->
+            <a href="files/B.Sc_Project_Report_Dr.Khosravifard_Parsa_Haghighi.pdf" class="btn btn-primary">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+      <div class="container text-center">
+        <a class="cc-google-scholar btn btn-link change-color-on-hover" href="https://scholar.google.com/citations?user=aHBqW7wAAAAJ&hl=en">
+          <img src="images/google-scholar-icon.png" alt="Google Scholar" width="30" height="30">
+        </a>
+        <a class="cc-github btn btn-link" href="https://github.com/parsa178"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/parsa-haghighi-b2156916b/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <div class="h4 title text-center">Parsa Haghighi</div>
+      <div class="text-center text-muted">
+        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
